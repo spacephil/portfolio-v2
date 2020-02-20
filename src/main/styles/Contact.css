@@ -1,0 +1,104 @@
+.contact{
+  background-color: #3C96B8;
+  width: 100%;
+  height: 50%;
+}
+
+
+.contact-title{
+  padding-right: 30px;
+  text-align: right;
+  position: relative;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.contact-title::before{
+  content: "Contact";
+  position: absolute;
+  font-size: 60px;
+  color: #161321;
+  opacity: 0.1;
+  top: 0px;
+  right: 30px;
+}
+
+.contact-title::after{
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 40px;
+  border-bottom: 2px solid red;
+  right: 30px;
+  bottom: 0;
+}
+
+.contact-field{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  padding: 20px;
+  background-color: #27272b;
+  width: 400px;
+  margin: 40px auto;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 3px 4px 8px #42393982;;
+}
+
+.contact-field > p{
+  margin-bottom: 20px;
+}
+
+.contact-button{
+  border: 1px solid rgb(160,212,255);
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: 4px 4px 3px #00000082;
+  margin: 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.contact-button:hover{
+  background: rgb(160,212,255);
+}
+
+.contact-button:active{
+  transform: scale(0.9);
+}
+
+
+.contact-button:hover{
+  color: black;
+}
+
+@media (max-width: 500px){
+  .contact{
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .contact-title{
+    padding-right: 20px;
+  }
+
+  .contact-title::before, .contact-title::after{
+    right: 20px;
+  }
+
+  .contact-field{
+    width: 75%;
+    font-size: 15px;
+  }
+
+  .contact-button{
+    font-size: 15px;
+  }
+}

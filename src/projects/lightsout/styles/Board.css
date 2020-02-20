@@ -1,0 +1,93 @@
+.Board {
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 50px #d2aec8, -10px 0 80px #2a525ac7, 10px 0 80px #11bd40;
+}
+
+table tr:first-child td:first-child {
+  border-radius: 10px 0 0 0 !important;
+}
+table tr:first-child td:last-child {
+  border-radius: 0 10px 0 0 !important;
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 10px !important;
+}
+table tr:last-child td:last-child {
+  border-radius: 0 0 10px 0 !important;
+}
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.Board-title{
+  text-align: center;
+  padding-top: 50px;
+}
+
+.winner{
+  text-align: center;
+  padding-top: 200px;
+}
+
+.neon-pink {
+  font-family: neon;
+  color: #da4bb5;
+  font-size: 50px;
+  text-shadow: 0 0 3vw #da4bb5;
+  animation: neon-pink 2.5s ease infinite;
+  -moz-animation: neon-pink 2.5s ease infinite;
+  -webkit-animation: neon-pink 2.5s ease infinite;
+}
+
+.neon-blue {
+  font-family: neon;
+  color: #426dfb;
+  font-size: 120px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 3vw #2356ff;
+  animation: neon-blue 1s linear infinite;
+  -moz-animation: neon-blue 1s linear infinite;
+  -webkit-animation: neon-blue 1s linear infinite;
+  -o-animation: neon-blue 1s linear infinite;
+}
+
+.neon-you, .neon-win {
+  font-size: 200px;
+}
+@keyframes neon-pink {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #fa16eb, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+      0 0 10vw #fa1c16, 0 0 0.4vw #fa16eb, 0.5vw 0.5vw 0.1vw #801436;
+    color: #fe2888;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #7a0b80, 0 0 1.5vw #7a0b80, 0 0 5vw #7a0b80,
+      0 0 5vw #7a0b80, 0 0 0.2vw #7a0b80, 0.5vw 0.5vw 0.1vw #400a17;
+    color: #801431;
+  }
+}
+
+@keyframes neon-blue {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff,
+      0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe, 0.5vw 0.5vw 0.1vw #147280;
+    color: #28d7fe;
+  }
+  50% {
+    text-shadow: 0 0 0.5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180,
+      0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0a3940;
+    color: #146c80;
+  }
+}
+
+@media (max-width: 500px){
+.Board{
+  margin: 10px;
+}
+
+}

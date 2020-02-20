@@ -1,0 +1,47 @@
+.projectview{
+  margin: 20px 50px;
+}
+
+.projectview-title{
+  position: relative;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.projectview-title::before{
+  content: "Projects";
+  position: absolute;
+  font-size: 60px;
+  color: #161321;
+  opacity: 0.1;
+  top: -30px;
+  text-align: center;
+  margin-left: -50px;
+}
+
+.projectview-title::after{
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 70px;
+  border-bottom: 2px solid red;
+  bottom: 0;
+  margin-left: -90px;
+}
+
+.projectview-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+@media (max-width: 500px){
+  .projectview{
+    margin: 20px 15px;
+  }
+
+  .projectview-grid{
+    grid-template-columns: 1fr;
+  }
+}
