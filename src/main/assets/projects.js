@@ -6,7 +6,7 @@ export default [
     tags: ["React", "React-Router", "Page-Transitions"],
     note: "",
     livesite: true,
-    github: "https://apple.com",
+    github: "https://github.com/spacephil/portfolio-v2/tree/master/src/projects/colorsapp",
     sdescription: "Eine Webseite mit vorgefertigten aber auch individuell anpassparen Farbpaletten.",
     mdescription: [
       "Der Benutzer kann zu Beginn aus einer Reihe an vorgefertigten Farbpaletten auswählen. Ebenfalls ist es möglich neue Paletten zu erstellen. Allerdings ist die Palettengröße auf 20 Farbfelder beschränkt.",
@@ -22,7 +22,7 @@ export default [
     tags: ["NodeJs", "Express", "MongoDB", "CRUD"],
     note: "Wird aktuell in React erstellt.",
     livesite: false,
-    github: "https://google.com",
+    github: "https://github.com/spacephil/urparty",
     sdescription: "Eine Full-Stack-Webseite zum besseren Planen von Parties/Meetings.",
     mdescription: [
       "Der Benutzer hat zu Beginn die Möglichkeit sich per lokalen Account, Facebook oder Google anzumelden. Danach kann er entweder eine eigene Party erstellen oder einer Party beitreten.",
@@ -39,7 +39,7 @@ export default [
     tags: ["React", "React-Router"],
     note: "",
     livesite: false,
-    github: "https://youtube.com",
+    github: "https://github.com/spacephil/portfolio-v2/tree/master/src",
     sdescription: "Meine persönliche Webseite/Portfolio.",
     mdescription: [
       "Mit React wurde die ursprüngliche Version in einzelne Komponenten unterteilt und mit neuem Design implementiert. Dank React-Router läuft der Seitenwechsel schneller. Im Hintergrund wird eine Datei geladen, welche alle Informationen über die Projekte bereitstellt."
@@ -53,7 +53,7 @@ export default [
     tags: ["React", "State-Management"],
     note: "",
     livesite: true,
-    github: "https://reddit.com",
+    github: "https://github.com/spacephil/portfolio-v2/tree/master/src/projects/lightsout",
     gif:[],
     sdescription: "Ein kleines Spiel, welches beim lernen von React erstellt wurde. State-Management stand hierbei im Vordergrund.",
     mdescription: ["Die Spielfeld-Komponenten beinhaltet 25 Zellen-Komponenten, welche jede ihren eigenen 'State' hat. Beim Starten des Spiel werden zufällige Zellen 'angeschaltet'. Durch das Anklicken einer Zelle ändert sich der 'State' der benachbarten Zelle. Wenn alle Zellen dunkel sind ist das Spiel gewonnen."]
