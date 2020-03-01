@@ -7,10 +7,9 @@ class ProjectCard extends Component{
     const {project} = this.props;
     return(
       <div className="projectcard" key={project.id}>
-        <div className={"projectcard-img " + project.id}>
-          <h2>{project.title}</h2>
-        </div>
+        <div className={"projectcard-img"} style={{backgroundImage: `url(${project.gif})`}}></div>
         <div className="projectcard-container">
+          <h2>{project.title}</h2>
           <ul className="projectcard-tags">
             {project.tags.map((t, i) => <li key={i}>{t}</li>)}
           </ul>

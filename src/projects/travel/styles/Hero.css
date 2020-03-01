@@ -1,0 +1,67 @@
+.hero{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.hero .background-image{
+  background-image: url("https://source.unsplash.com/v7daTKlZzaw");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  background-color: #80a3db;
+}
+
+.hero h1{
+  font: bold 60px "Open Sans", sans-serif;
+  margin-bottom: 15px;
+}
+
+.hero h3{
+  font: normal 28px "Open Sans", sans-serif;
+  margin-bottom: 40px;
+}
+
+.hero .ancor.btn{
+  padding: 20px 46px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+
+.hero-content-area{
+  opacity: 0;
+  margin-top: 100px;
+  animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+  100%{
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero{
+    min-height: 600px;
+  }
+
+  .hero h1{
+    font-size: 48px;
+  }
+
+  .hero h3{
+    font-size: 24px;
+  }
+
+  .hero .ancor.btn{
+    padding: 15px 40px;
+  }
+}

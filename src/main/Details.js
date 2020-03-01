@@ -13,6 +13,9 @@ class Details extends Component{
         <div className="details-wrapper">
           <div className="details-content">
             <h1 className="details-content-title">{project.title}</h1>
+              <div className="details-content-image">
+                <img src={project.gif} alt={project.title}></img>
+              </div>
             {project.mdescription.map((d, i) =>
               <div key={i} className="details-content-description">
                 <p>{d}</p>
@@ -25,12 +28,6 @@ class Details extends Component{
               <p>{project.possibleUpgrades}</p>
             </div>
           )}
-            {project.gif.map((g,i) =>
-              <div key={i} className="details-gif">
-                <h3>Impressionen:</h3>
-                <img src={g} alt={project.titel + " gif"}></img>
-              </div>
-            )}
           </div>
         </div>
       </div>

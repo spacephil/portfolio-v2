@@ -1,0 +1,82 @@
+.travel{
+  font: normal 16px sans-serif;
+  color: #555;
+  width: 100%;
+}
+
+ul, nav{
+  list-style: none;
+}
+
+.ancor{
+  text-decoration: none;
+  opacity: 0.75;
+  color: #fff;
+}
+
+.ancor:hover{
+  opacity: 1;
+}
+
+.ancor.btn{
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  background-color: #3f51b5;
+  opacity: 1;
+}
+
+.tsection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tsection:not(.hero){
+  padding: 100px;
+}
+
+.tsection:not(.hero):nth-child(even){
+  background-color: #f5f5f5;
+}
+
+.tgrid{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+hr{
+  width: 250px;
+  height: 3px;
+  background-color: #3f51b5;
+  border: 0;
+  margin-bottom: 50px;
+}
+
+section h3.title{
+  text-transform: capitalize;
+  font: bold 32px "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section p{
+  max-width: 775px;
+  line-height: 2;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@media(max-width: 800px){
+  section{
+    padding: 50px 20px;
+  }
+
+  .tgrid{
+    padding: 0;
+  }
+}

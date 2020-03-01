@@ -1,0 +1,20 @@
+.packages .tgrid li{
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.packages .tgrid li i{
+  color: #8c9eff;
+}
+
+.packages .tgrid li h4{
+  font-size: 30px;
+  margin: 25px 0;
+}
+
+@media (max-width: 800px) {
+  .packages .tgrid li{
+    flex-basis: 100%;
+    padding: 20px;
+  }
+}

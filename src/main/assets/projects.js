@@ -13,7 +13,7 @@ export default [
       "Nach Auswahl einer Palette kann der User entweder diverse Farbstufen auswählen oder direkt den Farbencode (HEX, RGB oder RGBA) in den Zwischenspeicher kopieren.",
       "Beim Erstellen einer eigenen Palette kann mit Hilfe eines ColorPickers die gewünschte Farbe ausgewählt, benannt und der Palette hinzugefügt werden. Wenn man fertig ist mit Auswahl der Farben kann man der Palette einen Namen und ein Emoji geben und diese Speichern (lokal)."
     ],
-    gif:[],
+    gif:"https://i.imgur.com/xltgpqQ.png",
     possibleUpgrades: "Eine zukünfitge Erweiterung wäre eine richtige Datenbankanbinung zur Speicherung von User-Profilen und deren entworfenen Farbpaletten."
   },
   {
@@ -30,7 +30,7 @@ export default [
       "Das Backend kümmert sich um die Verwaltung von Usern und dessen Parties, sowie um das richtige URL-Routing. Passwörter werden per Hash verschlüsselt und sind demnach nur zu entschlüsseln, wenn man den richtigen 'Umrechnungsschlüssel' hat.",
       "Durch das Backend werden die Daten user-spezifisch angezeigt, dass heißt das Parties die der User nicht erstellt hat bzw. nicht zu eingeladen ist und trotzdem in der Datenbank sind nicht angezeigt werden. Allerdings kann ein User mit dem richtigen PartyCode und Password (individueller Link) einer Party beitreten und an deren Umfragen teilnehmen."
     ],
-    gif:[],
+    gif:"https://i.imgur.com/tEPxco5.jpg",
     possibleUpgrades: "Aktuell wird urparty mit React entwickelt."
   },
   {
@@ -44,7 +44,7 @@ export default [
     mdescription: [
       "Mit React wurde die ursprüngliche Version in einzelne Komponenten unterteilt und mit neuem Design implementiert. Dank React-Router läuft der Seitenwechsel schneller. Im Hintergrund wird eine Datei geladen, welche alle Informationen über die Projekte bereitstellt."
     ],
-    gif:[],
+    gif:"https://i.imgur.com/10x1Oim.png",
     possibleUpgrades: "Eine mögliche Erweiterung wäre eine richtige Datenbankanbindung im Gegensatz zum Auslesen einer Datei. Dadurch könnte man zukünftige Projekte einfacher einbinden, wenn diese den zuvor erstellten Datenbankkonventionen entsprechen (Titel, id, etc.)."
   },
   {
@@ -54,8 +54,19 @@ export default [
     note: "",
     livesite: true,
     github: "https://github.com/spacephil/portfolio-v2/tree/master/src/projects/lightsout",
-    gif:[],
+    gif:"https://i.imgur.com/4v9fpoA.png",
     sdescription: "Ein kleines Spiel, welches beim lernen von React erstellt wurde. State-Management stand hierbei im Vordergrund.",
     mdescription: ["Die Spielfeld-Komponenten beinhaltet 25 Zellen-Komponenten, welche jede ihren eigenen 'State' hat. Beim Starten des Spiel werden zufällige Zellen 'angeschaltet'. Durch das Anklicken einer Zelle ändert sich der 'State' der benachbarten Zelle. Wenn alle Zellen dunkel sind ist das Spiel gewonnen."]
+  },
+  {
+    id: "travelsite",
+    title: "TravelSite",
+    tags: ["FlexBox", "Single-Page"],
+    note: "",
+    livesite: true,
+    github: "https://github.com/spacephil/portfolio-v2/tree/master/src/projects/travel",
+    gif:"https://i.imgur.com/27Z85wU.png",
+    sdescription: "Eine Webseite, welche für eine fiktive Reiseagentur erstellt wurde.",
+    mdescription: ["Erstellt wurde die Webseite mit HTML und CSS, allerdings wurde Sie in React neuinplementiert.", "Die Webseite zeigt dem Kunden alle wichtigen Informationen direkt auf einer Seite an." ]
   }
 ]

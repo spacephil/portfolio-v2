@@ -8,6 +8,7 @@ import Details from "./main/Details";
 import projects from "./main/assets/projects.js";
 
 import Lights from "./projects/lightsout/Lights.js";
+import Travel from "./projects/travel/Travel.js";
 
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Palette from "./projects/colorsapp/Palette";
@@ -76,6 +77,9 @@ class App extends Component {
           </Route>
           <Route exact path="/lightsout">
             <Lights />
+          </Route>
+          <Route exact path="/travelsite">
+            <Travel />
           </Route>
           <Route
             render={({ location }) => (

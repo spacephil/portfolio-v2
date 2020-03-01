@@ -1,0 +1,43 @@
+#one{
+  background-image: url("https://source.unsplash.com/DmVDrTLFHBw")
+}
+
+#two{
+  background-image: url("https://source.unsplash.com/pl1mhwMctJc")
+}
+
+#three{
+  background-image: url("https://source.unsplash.com/fItRJ7AHak8")
+}
+
+#four{
+  background-image: url("https://source.unsplash.com/QrRSm-QbjW0")
+}
+
+.destinations .tgrid li{
+  height: 350px;
+  padding: 10px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.destinations .tgrid li.small{
+  flex-basis: 26%;
+}
+
+.destinations .tgrid li.large{
+  flex-basis: 70%;
+}
+
+@media (max-width: 1100px) {
+  .destinations .tgrid li.small, .destinations .tgrid li.large{
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .destinations .tgrid li.small, .destinations .tgrid li.large{
+    flex-basis: 100%;
+  }
+}

@@ -1,0 +1,42 @@
+.tnavbar{
+  position: absolute;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px;
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
+  color: #fff;
+}
+
+@keyframes fadein  {
+  100%{
+    opacity: 1;
+  }
+}
+
+.tnavbar h2{
+  font-family: "Quicksand", sans-serif;
+}
+
+.tnavbar nav{
+  display: flex;
+  margin-right: -15px;
+}
+
+.tnavbar nav li{
+  margin: 0 15px;
+}
+
+@media (max-width: 800px) {
+  .tnavbar{
+    padding: 20px 0px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tnavbar h2{
+    margin-bottom: 15px;
+  }
+}
